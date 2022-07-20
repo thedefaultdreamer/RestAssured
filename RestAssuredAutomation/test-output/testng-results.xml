@@ -2,20 +2,36 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-01T14:00:52 IST" name="Default suite" finished-at="2022-06-01T14:00:54 IST" duration-ms="2531">
+  <suite started-at="2022-07-20T12:30:49 IST" name="Suite" finished-at="2022-07-20T12:30:52 IST" duration-ms="3354">
     <groups>
     </groups>
-    <test started-at="2022-06-01T14:00:52 IST" name="Default test" finished-at="2022-06-01T14:00:54 IST" duration-ms="2531">
-      <class name="tests.GetAndPostExamples">
-        <test-method signature="Get_Method()[pri:0, instance:tests.GetAndPostExamples@223aa2f7]" started-at="2022-06-01T14:00:52 IST" name="Get_Method" finished-at="2022-06-01T14:00:54 IST" duration-ms="2000" status="PASS">
+    <test started-at="2022-07-20T12:30:49 IST" name="Test" finished-at="2022-07-20T12:30:52 IST" duration-ms="3354">
+      <class name="tests.PostLoginDetails">
+        <test-method signature="SpeedLogin(org.testng.ITestContext)[pri:0, instance:tests.PostLoginDetails@6d3a388c]" started-at="2022-07-20T12:30:49 IST" name="SpeedLogin" finished-at="2022-07-20T12:30:51 IST" duration-ms="2453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1349883]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Get_Method -->
-        <test-method signature="Post_Method()[pri:0, instance:tests.GetAndPostExamples@223aa2f7]" started-at="2022-06-01T14:00:54 IST" name="Post_Method" finished-at="2022-06-01T14:00:54 IST" duration-ms="497" status="PASS">
+        </test-method> <!-- SpeedLogin -->
+      </class> <!-- tests.PostLoginDetails -->
+      <class name="tests.Logout">
+        <test-method signature="SpeedLogout(org.testng.ITestContext)[pri:0, instance:tests.Logout@3c73951]" started-at="2022-07-20T12:30:51 IST" name="SpeedLogout" finished-at="2022-07-20T12:30:52 IST" duration-ms="863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1349883]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Post_Method -->
-      </class> <!-- tests.GetAndPostExamples -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- SpeedLogout -->
+      </class> <!-- tests.Logout -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -12,7 +12,7 @@ public class Logout {
 	public void SpeedLogout(ITestContext context) {
 
 		System.out.println("Logout running");
-		baseURI = "https://devappapi.tryspeed.com/logout";
+		baseURI = "https://appapi.tryspeed.dev/logout";
 
 		String accecc_Token = (String) context.getAttribute("AccessToken");
 		String id_Token = (String) context.getAttribute("IdToken");

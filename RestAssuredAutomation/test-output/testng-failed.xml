@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.DataDrivenExamples">
+      <class name="tests.PostLoginDetails">
         <methods>
-          <include name="Post_Method"/>
+          <include name="SpeedLogin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.DataDrivenExamples -->
+      </class> <!-- tests.PostLoginDetails -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

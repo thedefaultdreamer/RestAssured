@@ -3,6 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="tests.PostLoginDetails">
+        <methods>
+          <include name="SpeedLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.PostLoginDetails -->
       <class name="tests.Logout">
         <methods>
           <include name="SpeedLogout" invocation-numbers="0"/>

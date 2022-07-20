@@ -20,9 +20,9 @@ public class PostLoginDetails {
 	public void SpeedLogin(ITestContext context) {
 
 		// Creating Pojo class object
-		LoginRequest LoginDetails = new LoginRequest("palash@tryspeed.com", "Qwerty@123");
+		LoginRequest LoginDetails = new LoginRequest("palash@tryspeed.com", "Admin@123");
 
-		baseURI = "https://devappapi.tryspeed.com/login";
+		baseURI = "https://appapi.tryspeed.dev/login";
 
 		System.out.println("============================================");
 		System.out.println(LoginDetails.toString());
