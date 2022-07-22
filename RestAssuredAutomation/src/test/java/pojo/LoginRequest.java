@@ -1,5 +1,7 @@
 package pojo;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 public class LoginRequest {
 	
 	private String email;
@@ -29,7 +31,7 @@ public class LoginRequest {
 		this.password = password;
 	}
 
-	@Override
+	@JsonCreator
 	public String toString() {
 		return "LoginDetails [email=" + email + ", password=" + password + "]";
 	}
