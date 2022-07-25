@@ -22,7 +22,7 @@ public class SignupResponse {
 		public Errors() {}
 
 		private String message;
-		
+		private String param;
 		private String type;
 
 		public String getMessage() {
@@ -41,6 +41,13 @@ public class SignupResponse {
 			this.type = type;
 		}
 
+		public String getParam() {
+			return param;
+		}
+
+		public void setParam(String param) {
+			this.param = param;
+		}
+
 	}
-	
 }

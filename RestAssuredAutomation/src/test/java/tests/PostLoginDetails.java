@@ -1,9 +1,6 @@
 package tests;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 import io.restassured.http.ContentType;
@@ -22,7 +19,7 @@ public class PostLoginDetails {
 		// Creating Pojo class object
 		LoginRequest LoginDetails = new LoginRequest("palash@tryspeed.com", "Admin@123");
 
-		baseURI = "https://appapi.tryspeed.dev/login";
+		baseURI = "https://appapi.tryspeed.dev";
 
 		System.out.println("============================================");
 		System.out.println(LoginDetails.toString());
@@ -35,9 +32,10 @@ public class PostLoginDetails {
 					.accept(ContentType.JSON)
 					.body(LoginDetails)
 				.when()
-					.post()
+					.post("/login")
 					.andReturn();
-
+        
+		// Saving post request, response in variable 
 		LoginResponse response = httpRequest.getBody().as(LoginResponse.class);
 
 //		System.out.println("============================================");
