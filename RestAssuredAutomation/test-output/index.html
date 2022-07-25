@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\PalashPatidar\AppData\Local\Temp\testng-eclipse--531131279\testng-customsuite.xml</span>
+                    <span>C:\Users\PalashPatidar\AppData\Local\Temp\testng-eclipse-1680957740\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="speed.SignUp" class="method navigator-link" hash-for-method="SignUp_With_ValidData">SignUp_With_ValidData</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="speed.VerifySignEmail" class="method navigator-link" hash-for-method="connectDataBase">connectDataBase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="speed.VerifySignEmail" class="method navigator-link" hash-for-method="verifyEmail_with_AlreadyUsedLink">verifyEmail_with_AlreadyUsedLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,14 +127,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">speed.SignUp</span>
+              <span class="class-name">speed.VerifySignEmail</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SignUp_With_ValidData">
-                  </a> <!-- SignUp_With_ValidData -->
-                  <span class="method-name">SignUp_With_ValidData</span>
+                  <a name="connectDataBase">
+                  </a> <!-- connectDataBase -->
+                  <span class="method-name">connectDataBase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEmail_with_AlreadyUsedLink">
+                  </a> <!-- verifyEmail_with_AlreadyUsedLink -->
+                  <span class="method-name">verifyEmail_with_AlreadyUsedLink</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +149,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\PalashPatidar\AppData\Local\Temp\testng-eclipse--531131279\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\PalashPatidar\AppData\Local\Temp\testng-eclipse-1680957740\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +158,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;speed.SignUp&quot;/&gt;
+      &lt;class name=&quot;speed.VerifySignEmail&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,16 +198,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SignUp_With_ValidData')
-data.setCell(0, 2, 'speed.SignUp')
-data.setCell(0, 3, 2317);
+data.setCell(0, 1, 'connectDataBase')
+data.setCell(0, 2, 'speed.VerifySignEmail')
+data.setCell(0, 3, 3014);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyEmail_with_AlreadyUsedLink')
+data.setCell(1, 2, 'speed.VerifySignEmail')
+data.setCell(1, 3, 2379);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -214,15 +230,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">speed.SignUp</span>
+              <span class="ignored-class-name">speed.VerifySignEmail</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">SignUp_With_AlreadyRegisteredEmail</span>
+                <span class="ignored-method-name">verifyEmail_with_ExpiredLink</span>
                 <br/>
-                <span class="ignored-method-name">SignUp_With_EmptyDataField</span>
+                <span class="ignored-method-name">verifyEmail_with_ValidLink</span>
                 <br/>
-                <span class="ignored-method-name">SignUp_With_ExceedPassword</span>
+                <span class="ignored-method-name">verifyEmail_with_Invalidlink</span>
                 <br/>
-                <span class="ignored-method-name">SignUp_With_InvalidEmailFormat</span>
+                <span class="ignored-method-name">verifyEmail_with_EmptyLink</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -234,10 +250,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">speed.SignUp</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">speed.VerifySignEmail</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">SignUp_With_ValidData</span>
+                <span class="method-name">connectDataBase</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyEmail_with_AlreadyUsedLink</span>
+                <span class="method-start">3018 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

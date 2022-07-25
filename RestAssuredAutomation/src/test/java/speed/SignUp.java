@@ -1,6 +1,7 @@
 package speed;
 
 import static io.restassured.RestAssured.*;
+
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
@@ -12,7 +13,7 @@ public class SignUp {
 
 	@SuppressWarnings("unchecked")
 	@Test(enabled = false)
-	public void SignUp_With_AlreadyRegisteredEmail() {
+	public void signup_with_AlreadyRegisteredEmail() {
 
 		baseURI = "https://appapi.tryspeed.dev";
 
@@ -33,12 +34,11 @@ public class SignUp {
 
 		String message = response.getErrors().get(0).getMessage();
 		System.out.println("Error message: " + message);
-
 	}
 
 	@SuppressWarnings("unchecked")
 	@Test(enabled = false)
-	public void SignUp_With_EmptyDataField() {
+	public void signup_with_EmptyDataField() {
 
 		baseURI = "https://appapi.tryspeed.dev";
 
@@ -62,12 +62,11 @@ public class SignUp {
 		});
 //		String message = response.getErrors().get(0).getMessage();
 //		System.out.println("Error message: " + message);
-
 	}
 
 	@SuppressWarnings("unchecked")
 	@Test(enabled = false)
-	public void SignUp_With_InvalidEmailFormat() {
+	public void signup_with_InvalidEmailFormat() {
 
 		baseURI = "https://appapi.tryspeed.dev";
 
@@ -88,12 +87,11 @@ public class SignUp {
 
 		String message = response.getErrors().get(0).getMessage();
 		System.out.println("Error message: " + message);
-
 	}
 
 	@SuppressWarnings("unchecked")
 	@Test (enabled = false)
-	public void SignUp_With_ExceedPassword() {
+	public void signup_with_ExceedPassword() {
 
 		baseURI = "https://appapi.tryspeed.dev";
 
@@ -114,12 +112,11 @@ public class SignUp {
 
 		String message = response.getErrors().get(0).getMessage();
 		System.out.println("Error message: " + message);
-
 	}
 
 	@SuppressWarnings("unchecked")
-	@Test
-	public void SignUp_With_ValidData() {
+	@Test (enabled = false)
+	public void signup_with_ValidData() {
 
 		baseURI = "https://appapi.tryspeed.dev";
 
@@ -136,5 +133,5 @@ public class SignUp {
 				.accept(ContentType.JSON).body(request.toJSONString()).when().post("/signup").then().statusCode(200)
 				.log().status();
 	}
-
+	
 }

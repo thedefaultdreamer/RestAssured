@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-25T11:55:33 IST" name="Default suite" finished-at="2022-07-25T11:55:35 IST" duration-ms="2353">
+  <suite started-at="2022-07-25T17:48:36 IST" name="Default suite" finished-at="2022-07-25T17:48:42 IST" duration-ms="5427">
     <groups>
     </groups>
-    <test started-at="2022-07-25T11:55:33 IST" name="Default test" finished-at="2022-07-25T11:55:35 IST" duration-ms="2353">
-      <class name="speed.SignUp">
-        <test-method signature="SignUp_With_ValidData()[pri:0, instance:speed.SignUp@20f5239f]" started-at="2022-07-25T11:55:33 IST" name="SignUp_With_ValidData" finished-at="2022-07-25T11:55:35 IST" duration-ms="2317" status="PASS">
+    <test started-at="2022-07-25T17:48:36 IST" name="Default test" finished-at="2022-07-25T17:48:42 IST" duration-ms="5427">
+      <class name="speed.VerifySignEmail">
+        <test-method signature="connectDataBase()[pri:0, instance:speed.VerifySignEmail@3514a4c0]" started-at="2022-07-25T17:48:36 IST" name="connectDataBase" finished-at="2022-07-25T17:48:39 IST" duration-ms="3014" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignUp_With_ValidData -->
-      </class> <!-- speed.SignUp -->
+        </test-method> <!-- connectDataBase -->
+        <test-method signature="verifyEmail_with_AlreadyUsedLink()[pri:0, instance:speed.VerifySignEmail@3514a4c0]" started-at="2022-07-25T17:48:39 IST" name="verifyEmail_with_AlreadyUsedLink" finished-at="2022-07-25T17:48:42 IST" duration-ms="2379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmail_with_AlreadyUsedLink -->
+      </class> <!-- speed.VerifySignEmail -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
