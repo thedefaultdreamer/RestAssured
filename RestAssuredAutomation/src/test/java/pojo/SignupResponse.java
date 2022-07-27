@@ -6,16 +6,14 @@ public class SignupResponse {
 
 	private List<Errors> errors;
 
-
 	public List<Errors> getErrors() {
 		return errors;
 	}
 
-
 	public void setErrors(List<Errors> errors) {
 		this.errors = errors;
 	}
-
+	
 
 	public static class Errors {
 		
@@ -48,6 +46,6 @@ public class SignupResponse {
 		public void setParam(String param) {
 			this.param = param;
 		}
-
+	
 	}
 }

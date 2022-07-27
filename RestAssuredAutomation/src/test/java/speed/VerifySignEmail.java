@@ -10,7 +10,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.json.simple.JSONObject;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;

@@ -16,7 +16,7 @@ public class ExcelUtils {
 		try {
 			
 			workbook = new XSSFWorkbook(excelPath);
-			sheet = workbook.getSheet("Sheet1");
+			sheet = workbook.getSheet(sheetName);
 		} catch (IOException exp) {
 			System.out.println(exp.getMessage());
 			System.out.println(exp.getCause());
@@ -24,11 +24,12 @@ public class ExcelUtils {
 		}
 	}
 
-	public static void getCellData(int rowNum, int colNum) {
+	public static Object getCellData(int rowNum, int colNum) {
 			
 			DataFormatter formatter = new DataFormatter();
 			Object value = formatter.formatCellValue(sheet.getRow(rowNum).getCell(colNum));		
 			System.out.println(value);
+			return value;
 	}
 
 	public static void getRowCount() {

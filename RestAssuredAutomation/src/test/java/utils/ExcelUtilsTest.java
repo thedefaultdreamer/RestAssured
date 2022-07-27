@@ -4,8 +4,8 @@ public class ExcelUtilsTest {
 	
 	public static void main(String[] args) {
 		
-		String excelPath = "./data/LoginData.xlsx";
-		String sheetName = "Sheet1";
+		String excelPath = "./data/TestData.xlsx";
+		String sheetName = "Login";
 		
 		ExcelUtils excel = new ExcelUtils(excelPath, sheetName);
 		
