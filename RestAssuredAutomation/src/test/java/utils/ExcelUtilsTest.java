@@ -11,6 +11,7 @@ public class ExcelUtilsTest {
 		
 		excel.getRowCount();
 		excel.getCellData(1, 0);
+		excel.getCellData(1, 1);
 	}
 
 }

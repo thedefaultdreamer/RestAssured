@@ -28,7 +28,7 @@ public class ExcelUtils {
 			
 			DataFormatter formatter = new DataFormatter();
 			Object value = formatter.formatCellValue(sheet.getRow(rowNum).getCell(colNum));		
-			System.out.println(value);
+			System.out.println("Cell Data (" +rowNum+ " " +colNum+ ") :"  + value);
 			return value;
 	}
 

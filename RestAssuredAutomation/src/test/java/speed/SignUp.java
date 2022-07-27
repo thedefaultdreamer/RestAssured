@@ -125,7 +125,7 @@ public class SignUp {
 		request.put("first_name", "Palash");
 		request.put("last_name", "Patidar");
 		request.put("password", "Open@123");
-		request.put("email", "palash+121@tryspeed.com");
+		request.put("email", "palash+122@tryspeed.com");
 
 		System.out.println(request.toJSONString());
 

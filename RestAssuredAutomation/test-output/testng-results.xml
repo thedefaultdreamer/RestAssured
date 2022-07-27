@@ -1,68 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-27T12:10:17 IST" name="Default suite" finished-at="2022-07-27T12:10:20 IST" duration-ms="2957">
+  <suite started-at="2022-07-27T16:34:48 IST" name="Default suite" finished-at="2022-07-27T16:34:52 IST" duration-ms="3452">
     <groups>
     </groups>
-    <test started-at="2022-07-27T12:10:17 IST" name="Default test" finished-at="2022-07-27T12:10:20 IST" duration-ms="2957">
-      <class name="tests.DataDriven">
-        <test-method signature="post()[pri:0, instance:tests.DataDriven@3059cbc]" started-at="2022-07-27T12:10:17 IST" name="post" finished-at="2022-07-27T12:10:20 IST" duration-ms="2925" status="FAIL">
-          <exception class="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">
-            <message>
-              <![CDATA[Unrecognized field "errors" (class pojo.LoginResponse), not marked as ignorable (4 known properties: "id_token", "access_token", "refresh_token", "session"])
- at [Source: (String)"{"errors":[{"message":"password must not be blank.","param":"password","type":"invalid_request_error"},{"message":"email must be a well-formed email address.","param":"email","type":"invalid_request_error"}]}"; line: 1, column: 12] (through reference chain: pojo.LoginResponse["errors"])]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "errors" (class pojo.LoginResponse), not marked as ignorable (4 known properties: "id_token", "access_token", "refresh_token", "session"])
- at [Source: (String)"{"errors":[{"message":"password must not be blank.","param":"password","type":"invalid_request_error"},{"message":"email must be a well-formed email address.","param":"email","type":"invalid_request_error"}]}"; line: 1, column: 12] (through reference chain: pojo.LoginResponse["errors"])
-at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
-at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
-at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2023)
-at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
-at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
-at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:319)
-at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176)
-at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
-at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
-at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
-at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597)
-at tests.DataDriven.post(DataDriven.java:54)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException -->
+    <test started-at="2022-07-27T16:34:48 IST" name="Default test" finished-at="2022-07-27T16:34:52 IST" duration-ms="3452">
+      <class name="speed.Login">
+        <test-method signature="name()[pri:0, instance:speed.Login@793be5ca]" started-at="2022-07-27T16:34:48 IST" name="name" finished-at="2022-07-27T16:34:52 IST" duration-ms="3420" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- post -->
-      </class> <!-- tests.DataDriven -->
+        </test-method> <!-- name -->
+      </class> <!-- speed.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

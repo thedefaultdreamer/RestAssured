@@ -9,10 +9,10 @@ public class LoginResponse {
 	private String session;
 
 	//Public Constructor
-	public LoginResponse()
+	/*public LoginResponse()
 	{
 		
-	}
+	}*/
 
 	// Public getter setter methods
 	public String getAccess_token() {
@@ -47,10 +47,10 @@ public class LoginResponse {
 		this.session = session;
 	}
 	
-	@Override
+/*	@Override
 	public String toString() {
 		return "LoginResponse [access_token=" + access_token + ", id_token=" + id_token + ", refresh_token="
 				+ refresh_token + ", session=" + session + "]";
-	}
+	}*/
 
 }
