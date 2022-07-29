@@ -3,19 +3,25 @@ package speed;
 import static io.restassured.RestAssured.*;
 
 import org.json.simple.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constants.EndPoints;
+import constants.Environments;
+import constants.Errors;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import pojo.SignupResponse;
 
 public class SignUp {
 
+	Environments Env = new Environments();
+	EndPoints endPoints = new EndPoints();
+	Errors errors = new Errors();
+	
 	@SuppressWarnings("unchecked")
-	@Test(enabled = false)
+	@Test
 	public void signup_with_AlreadyRegisteredEmail() {
-
-		baseURI = "https://appapi.tryspeed.dev";
 
 		JSONObject request = new JSONObject();
 		request.put("country", "India");
@@ -26,14 +32,16 @@ public class SignUp {
 
 		System.out.println(request.toJSONString());
 
-		Response httpRequest = ((Response) given().baseUri(baseURI).header("Content-Type", "application/json")
+		Response httpRequest = ((Response) given().baseUri(Env.dev).header("Content-Type", "application/json")
 				.contentType(ContentType.JSON).accept(ContentType.JSON).body(request.toJSONString()).when()
-				.post("/signup")).andReturn();
+				.post(endPoints.signup)).andReturn();
 
 		SignupResponse response = httpRequest.getBody().as(SignupResponse.class);
 
 		String message = response.getErrors().get(0).getMessage();
 		System.out.println("Error message: " + message);
+		
+		Assert.assertEquals(message, errors.signup_AlreadyRegisteredEmail);
 	}
 
 	@SuppressWarnings("unchecked")

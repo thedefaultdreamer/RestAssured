@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-27T16:34:48 IST" name="Default suite" finished-at="2022-07-27T16:34:52 IST" duration-ms="3452">
+  <suite started-at="2022-07-29T15:47:50 IST" name="Default suite" finished-at="2022-07-29T15:47:52 IST" duration-ms="2751">
     <groups>
     </groups>
-    <test started-at="2022-07-27T16:34:48 IST" name="Default test" finished-at="2022-07-27T16:34:52 IST" duration-ms="3452">
-      <class name="speed.Login">
-        <test-method signature="name()[pri:0, instance:speed.Login@793be5ca]" started-at="2022-07-27T16:34:48 IST" name="name" finished-at="2022-07-27T16:34:52 IST" duration-ms="3420" status="PASS">
+    <test started-at="2022-07-29T15:47:50 IST" name="Default test" finished-at="2022-07-29T15:47:52 IST" duration-ms="2751">
+      <class name="speed.SignUp">
+        <test-method signature="signup_with_AlreadyRegisteredEmail()[pri:0, instance:speed.SignUp@15aab8c6]" started-at="2022-07-29T15:47:50 IST" name="signup_with_AlreadyRegisteredEmail" finished-at="2022-07-29T15:47:52 IST" duration-ms="2714" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- name -->
-      </class> <!-- speed.Login -->
+        </test-method> <!-- signup_with_AlreadyRegisteredEmail -->
+      </class> <!-- speed.SignUp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
