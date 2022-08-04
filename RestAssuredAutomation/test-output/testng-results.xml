@@ -2,24 +2,24 @@
 <testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-04T12:01:07 IST" name="Default suite" finished-at="2022-08-04T12:01:13 IST" duration-ms="5967">
+  <suite started-at="2022-08-04T15:12:04 IST" name="Default suite" finished-at="2022-08-04T15:12:19 IST" duration-ms="14665">
     <groups>
     </groups>
-    <test started-at="2022-08-04T12:01:07 IST" name="Default test" finished-at="2022-08-04T12:01:13 IST" duration-ms="5967">
+    <test started-at="2022-08-04T15:12:04 IST" name="Default test" finished-at="2022-08-04T15:12:19 IST" duration-ms="14665">
       <class name="speed.SignUp">
-        <test-method signature="signup_with_AlreadyRegisteredEmail()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T12:01:07 IST" name="signup_with_AlreadyRegisteredEmail" finished-at="2022-08-04T12:01:09 IST" duration-ms="2697" status="PASS">
+        <test-method signature="signup_with_AlreadyRegisteredEmail()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T15:12:04 IST" name="signup_with_AlreadyRegisteredEmail" finished-at="2022-08-04T15:12:11 IST" duration-ms="6904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup_with_AlreadyRegisteredEmail -->
-        <test-method signature="signup_with_EmptyDataField()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T12:01:09 IST" name="signup_with_EmptyDataField" finished-at="2022-08-04T12:01:10 IST" duration-ms="1013" status="PASS">
+        <test-method signature="signup_with_EmptyDataField()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T15:12:11 IST" name="signup_with_EmptyDataField" finished-at="2022-08-04T15:12:13 IST" duration-ms="1446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup_with_EmptyDataField -->
-        <test-method signature="signup_with_ExceedPassword()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T12:01:10 IST" name="signup_with_ExceedPassword" finished-at="2022-08-04T12:01:11 IST" duration-ms="1112" status="PASS">
+        <test-method signature="signup_with_ExceedPassword()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T15:12:13 IST" name="signup_with_ExceedPassword" finished-at="2022-08-04T15:12:14 IST" duration-ms="1050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup_with_ExceedPassword -->
-        <test-method signature="signup_with_InvalidEmailFormat()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T12:01:11 IST" name="signup_with_InvalidEmailFormat" finished-at="2022-08-04T12:01:13 IST" duration-ms="1106" status="PASS">
+        <test-method signature="signup_with_InvalidEmailFormat()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T15:12:14 IST" name="signup_with_InvalidEmailFormat" finished-at="2022-08-04T15:12:19 IST" duration-ms="5229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup_with_InvalidEmailFormat -->

@@ -53,9 +53,9 @@ public class SignUp {
 		System.out.println("Error message: " + message);
 		
 		String statusLine = httpRequest.getStatusLine();
-		System.out.println("Error message: " + statusLine);
+		System.out.println("Status line: " + statusLine);
 		
-		Assert.assertEquals(message, errors.signup_AlreadyRegisteredEmail);
+		Assert.assertEquals(message, errors.signupError_AlreadyRegisteredEmail);
 		
 	}
 
@@ -84,6 +84,9 @@ public class SignUp {
 			System.out.println("Error message: " + data.getMessage());
 		});
 		
+		String statusLine = httpRequest.getStatusLine();
+		System.out.println("Status line: " + statusLine);
+		
 //		String message = response.getErrors().get(0).getMessage();
 //		System.out.println("Error message: " + message);
 	}
@@ -111,6 +114,11 @@ public class SignUp {
 
 		String message = response.getErrors().get(0).getMessage();
 		System.out.println("Error message: " + message);
+		
+		Assert.assertEquals(message, errors.signupError_InvalidEmailFormat);
+		
+		String statusLine = httpRequest.getStatusLine();
+		System.out.println("Status line: " + statusLine);
 	}
 
 	@SuppressWarnings("unchecked")
@@ -136,6 +144,11 @@ public class SignUp {
 		
 		String message = response.getErrors().get(0).getMessage();
 		System.out.println("Error message: " + message);
+		
+		Assert.assertEquals(message, errors.signupError_ExcceExceedPassword);
+		
+		String statusLine = httpRequest.getStatusLine();
+		System.out.println("Status line: " + statusLine);
 	}
 
 	@SuppressWarnings("unchecked")
