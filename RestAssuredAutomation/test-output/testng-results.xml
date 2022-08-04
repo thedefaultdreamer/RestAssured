@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-29T15:47:50 IST" name="Default suite" finished-at="2022-07-29T15:47:52 IST" duration-ms="2751">
+  <suite started-at="2022-08-04T12:01:07 IST" name="Default suite" finished-at="2022-08-04T12:01:13 IST" duration-ms="5967">
     <groups>
     </groups>
-    <test started-at="2022-07-29T15:47:50 IST" name="Default test" finished-at="2022-07-29T15:47:52 IST" duration-ms="2751">
+    <test started-at="2022-08-04T12:01:07 IST" name="Default test" finished-at="2022-08-04T12:01:13 IST" duration-ms="5967">
       <class name="speed.SignUp">
-        <test-method signature="signup_with_AlreadyRegisteredEmail()[pri:0, instance:speed.SignUp@15aab8c6]" started-at="2022-07-29T15:47:50 IST" name="signup_with_AlreadyRegisteredEmail" finished-at="2022-07-29T15:47:52 IST" duration-ms="2714" status="PASS">
+        <test-method signature="signup_with_AlreadyRegisteredEmail()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T12:01:07 IST" name="signup_with_AlreadyRegisteredEmail" finished-at="2022-08-04T12:01:09 IST" duration-ms="2697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup_with_AlreadyRegisteredEmail -->
+        <test-method signature="signup_with_EmptyDataField()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T12:01:09 IST" name="signup_with_EmptyDataField" finished-at="2022-08-04T12:01:10 IST" duration-ms="1013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup_with_EmptyDataField -->
+        <test-method signature="signup_with_ExceedPassword()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T12:01:10 IST" name="signup_with_ExceedPassword" finished-at="2022-08-04T12:01:11 IST" duration-ms="1112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup_with_ExceedPassword -->
+        <test-method signature="signup_with_InvalidEmailFormat()[pri:0, instance:speed.SignUp@48c35007]" started-at="2022-08-04T12:01:11 IST" name="signup_with_InvalidEmailFormat" finished-at="2022-08-04T12:01:13 IST" duration-ms="1106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup_with_InvalidEmailFormat -->
       </class> <!-- speed.SignUp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

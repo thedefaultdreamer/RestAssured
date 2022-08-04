@@ -6,6 +6,9 @@
       <class name="speed.SignUp">
         <methods>
           <include name="signup_with_AlreadyRegisteredEmail"/>
+          <include name="signup_with_InvalidEmailFormat"/>
+          <include name="signup_with_EmptyDataField"/>
+          <include name="signup_with_ExceedPassword"/>
         </methods>
       </class> <!-- speed.SignUp -->
     </classes>

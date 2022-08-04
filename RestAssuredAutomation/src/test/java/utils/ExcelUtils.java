@@ -24,7 +24,7 @@ public class ExcelUtils {
 		}
 	}
 
-	public static Object getCellData(int rowNum, int colNum) {
+	public Object getCellData(int rowNum, int colNum) {
 			
 			DataFormatter formatter = new DataFormatter();
 			Object value = formatter.formatCellValue(sheet.getRow(rowNum).getCell(colNum));		
