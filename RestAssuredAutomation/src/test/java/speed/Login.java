@@ -30,7 +30,7 @@ public class Login {
 	
 	@SuppressWarnings({ "unchecked" })
 	@Test
-	public void name() throws IOException {
+	public void Login_With_ValidCredential() throws IOException {
 		
 		//Create a JSON object for request and add the data from excel to it
 		JSONObject request = new JSONObject();
@@ -50,6 +50,8 @@ public class Login {
 	.then()
 		.extract().response();
 		
+		System.out.println(httpRequest.statusLine());
+		
 		// Get the response as string and store it in string variable
 		String stringToParse = httpRequest.getBody().asString();
 		System.out.println(stringToParse);
@@ -60,8 +62,9 @@ public class Login {
 		
 		// Pass this userinfo object to the method writeResponse. In this method we are going to write our response to an excel sheet
 		WriteResponse writeresponse = new WriteResponse();
-		writeresponse.writeResponse(loginResponse);
-		
+		writeresponse.writeResponse(loginResponse);	
 	}
+	
+	
 }
 

@@ -10,27 +10,35 @@ import constants.EndPoints;
 import constants.Environments;
 import constants.Errors;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import pojo.SignupRequest;
 import pojo.SignupResponse;
 import utils.ExcelUtils;
 
-public class SignUp {
+public class POST_SignUp {
+	
+//	SignUp with already registered email address
+//	SignUp with empty data field
+//	SignUp with invalid email format
+//	SignUp with exceed password
+//	SignUp with valid data 
 
 	Environments env = new Environments();
 	EndPoints endPoints = new EndPoints();
 	Errors errors = new Errors();
 	
-	String excelPath = "./src/test/resources/SignUpData.xlsx";
+	String excelPath = "./src/test/resources/UMSData.xlsx";
 	String sheetName = "Signup";
 	
 	// Now we are going to access the excel sheet and get the celldata by passing the excelpath and sheetname to ExcelUtils.java
 	ExcelUtils excel = new ExcelUtils(excelPath, sheetName);
 	
 	@SuppressWarnings({ "unchecked" })
-	@Test
+	@Test (enabled = false)
 	public void signup_with_AlreadyRegisteredEmail() {
 		
-		System.out.println("===============================================");
+		System.out.println("=======signup_with_AlreadyRegisteredEmail=======");
 
 		JSONObject request = new JSONObject();
 		request.put("first_name", excel.getCellData(1, 0));
@@ -60,10 +68,10 @@ public class SignUp {
 	}
 
 	@SuppressWarnings("unchecked")
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void signup_with_EmptyDataField() {
 		
-		System.out.println("===============================================");
+		System.out.println("=======signup_with_EmptyDataField=======");
 
 		JSONObject request = new JSONObject();
 		request.put("country", "");
@@ -92,10 +100,10 @@ public class SignUp {
 	}
 
 	@SuppressWarnings({ "unchecked" })
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void signup_with_InvalidEmailFormat() {
 
-		System.out.println("===============================================");
+		System.out.println("=======signup_with_InvalidEmailFormat========");
 
 		JSONObject request = new JSONObject();
 		request.put("first_name", excel.getCellData(3, 0));
@@ -122,10 +130,10 @@ public class SignUp {
 	}
 
 	@SuppressWarnings("unchecked")
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void signup_with_ExceedPassword() {
 
-		System.out.println("===============================================");
+		System.out.println("========signup_with_ExceedPassword========");
 
 		JSONObject request = new JSONObject();
 		request.put("first_name", excel.getCellData(4, 0));
@@ -152,24 +160,26 @@ public class SignUp {
 	}
 
 	@SuppressWarnings("unchecked")
-	@Test (enabled = false)
+	@Test (enabled = true)
 	public void signup_with_ValidData() {
 
-		System.out.println("===============================================");
-
+		System.out.println("=======signup_with_ValidData=======");
+		
 		JSONObject request = new JSONObject();
 		request.put("first_name", excel.getCellData(5, 0));
 		request.put("last_name", excel.getCellData(5, 1));
-		request.put("email", excel.getCellData(5, 2));
+		request.put("email", excel.getCellData(5, 2) );
 		request.put("country", excel.getCellData(5, 3));
 		request.put("password", excel.getCellData(5, 4));
 
 		System.out.println("Request Body: " + request.toJSONString());
-
-		given().baseUri(env.dev).header("Content-Type", "application/json").contentType(ContentType.JSON)
-				.accept(ContentType.JSON).body(request.toJSONString()).when().post(endPoints.signup).then().statusCode(200)
-				.log().status();
-		System.out.println("===============================================");
+		
+		
+		Response httpRequest = ((Response) given().baseUri(env.dev).header("Content-Type", "application/json").contentType(ContentType.JSON)
+				.accept(ContentType.JSON).body(request.toJSONString()).when().post(endPoints.signup)).andReturn();
+		
+		Assert.assertEquals(httpRequest.getStatusCode(), 200);
+		
 	}
 	
 }

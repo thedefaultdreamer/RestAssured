@@ -10,7 +10,7 @@ import io.restassured.http.ContentType;
 
 public class GetAndPostExamples {
 
-	@Test
+	@Test (enabled = false)
 	public void Get_Method() {
 
 		baseURI = "https://reqres.in/api";

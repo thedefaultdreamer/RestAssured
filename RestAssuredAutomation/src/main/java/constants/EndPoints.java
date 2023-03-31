@@ -2,10 +2,10 @@ package constants;
 
 public class EndPoints {
 	
-	public String signup = "/signup";
-	public String resendVerificationCode = "/resend-verification-code";
-	public String verifyEmail = "/verify-email";
+	public static String signup = "/signup";
+	public static String resendVerificationCode = "/resend-verification-code";
+	public static String verifyEmail = "/verify-email";
 	
-	public String login = "/login";
+	public static String login = "/login";
 
 }
